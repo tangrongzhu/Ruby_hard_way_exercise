@@ -43,3 +43,5 @@ def end  defines a function
 .seek(integer) a file object method, moves a file's position indicator to a specified location
 +=, -=, increment, decrement.
 return used to exist a function and return the specified value to the function caller.
+<<END END - heredoc it's another way other than triple double quotes to create multi-line strings.
+  * END is a simply a token string, we can even replace both of the END words with hamburger.
