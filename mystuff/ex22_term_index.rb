@@ -45,3 +45,6 @@ def end  defines a function
 return used to exist a function and return the specified value to the function caller.
 <<END END - heredoc it's another way other than triple double quotes to create multi-line strings.
   * END is a simply a token string, we can even replace both of the END words with hamburger.
+Module (Ex25) ...end    define a module, only able to import the module to run it in other files.
+require "./ex25.rb" import a module, give required value, can run/call all function in the module.
+if condition elsif  condition else ... end
