@@ -48,3 +48,23 @@ return used to exist a function and return the specified value to the function c
 Module (Ex25) ...end    define a module, only able to import the module to run it in other files.
 require "./ex25.rb" import a module, give required value, can run/call all function in the module.
 if condition elsif  condition else ... end
+
+for-each loop:
+  fruits.each do |i|
+    puts ....
+  end
+
+#or another way:
+  fruits.each {|i| puts ...}
+
+RUby's "range operator" (.. and ...) is used to loop through a collection of integers.
+  .. - is inclusive of the first and last element,
+  ... - is exclusive of the last element.
+ (first_number..last_number).each do |number|
+   puts number
+ end
+
+arrays : here is the Ruby doc on Array: http://ruby-doc.org/core-2.2.0/Array.html
+you can also sort arrays, reverse arrays, replace spedific elements...etc.
+1. push function. ex. fruits.push('bananas')
+2. << is an append operator pushes the given object on to the end of array. - fruits << x is same as fruits.push(x)
