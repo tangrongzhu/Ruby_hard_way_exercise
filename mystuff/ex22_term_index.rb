@@ -57,14 +57,26 @@ for-each loop:
 #or another way:
   fruits.each {|i| puts ...}
 
-RUby's "range operator" (.. and ...) is used to loop through a collection of integers.
+Ruby's "range operator" (.. and ...) is used to loop through a collection of integers.
   .. - is inclusive of the first and last element,
   ... - is exclusive of the last element.
  (first_number..last_number).each do |number|
    puts number
  end
 
-arrays : here is the Ruby doc on Array: http://ruby-doc.org/core-2.2.0/Array.html
+Arrays : here is the Ruby doc on Array: http://ruby-doc.org/core-2.2.0/Array.html
 you can also sort arrays, reverse arrays, replace spedific elements...etc.
 1. push function. ex. fruits.push('bananas')
 2. << is an append operator pushes the given object on to the end of array. - fruits << x is same as fruits.push(x)
+
+check if input string is number only using this Regexp:
+  choice =~ \A[-+]?[0-9]*\.?[0-9]+\Z
+
+Exit code in the Ruby:
+  exit(true) # Exits with "success" code
+  exit(0) # Exits with "success" code, will be a good exit.
+
+  exit(false) # Exits with "failure" code
+  exit(1) # Exits with "failure" code, it will be an error.
+
+  exit(436) # Custom failure error code

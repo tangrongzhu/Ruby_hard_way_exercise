@@ -5,7 +5,10 @@ def gold_room
   choice = $stdin.gets.chomp
 
   # this line has a bug, so fix it
-  if choice.scan(/\D/).empty? # it would be truthy if string contains only digits.
+  # if choice.scan(/\D/).empty? # it would be truthy if string contains only digits.
+  # if choice =~ /\d+/ # comparing if somestring equal to digits, return the position of didgit or nil
+ if choice =~ \A[-+]?[0-9]*\.?[0-9]+\Z  # check variableis a last_number
+  # if choice.to_i.is_a? Numeric
     how_much = choice.to_i
   else
     dead("Man, learn to type a number.")
